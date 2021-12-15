@@ -111,6 +111,34 @@ void Afunction(char *word, char *text)
     }
     printf("\n");
 }
+void Bfuncion(char *word, char *text){
+
+}
+
+char* rev(char *word){
+    int len = strlen(word);
+    char s1[len];
+    for (size_t i = 0; i < len; i++)
+    {
+        s1[i] = word[len-1-i];
+    }
+    return s1;
+}
+
+void Atbash(char *word){
+    int len = strlen(word);
+    for (size_t i = 0; i < len; i++)
+    {
+        if (isupeer(word[i]))
+        {
+            word[i] = 'Z' + 'A' -word[i]; 
+        }
+        if (islower(word[i]))
+        {
+            word[i] = 'z'  + 'a' - word[i];
+        }
+    }
+}
 
 int main()
 {
