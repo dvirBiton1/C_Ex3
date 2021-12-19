@@ -242,7 +242,7 @@ void Cfunction(char *word, char *text){
         }
         start++;
     }
-    printf("\n");
+    // printf("\n");
 }
 // void Dfunction(char *word, char *text){
 //     printf("Anagram Sequences: ");
