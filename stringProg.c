@@ -166,10 +166,15 @@ void Bfunction(char *word, char *text){
                     }
                     if((text[start + i + y] == 32))
                     {
+                        printf("i am in");
                         i=i-1;
                         y=y+1;
                         x=1;
                     }
+                }
+                if(strlen(word) > (startWord-start+1))
+                {
+                    x = 1;
                 }
                 if(!x)
                 {
