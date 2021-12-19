@@ -2,5 +2,5 @@ inputs
 outputs
 out.txt
 stringProg
-stringProgOld.c
+stringProgOld
 test
