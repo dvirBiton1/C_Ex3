@@ -145,7 +145,6 @@ void Bfunction(char *word, char *text){
                     }
                     if((text[start + i + y] == 32))
                     {
-                        printf("i am in");
                         i=i-1;
                         y=y+1;
                         x=1;
@@ -250,8 +249,6 @@ int main()
         i++;
         ch = getchar();
     } while (ch != '~');
-    // printf("%s\n", word);
-    // printf("%s\n", text);
     Afunction(word, text);
     Bfunction(word, text);
     Cfunction(word, text);
