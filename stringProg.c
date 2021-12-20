@@ -66,28 +66,7 @@ int numerology(char *s)
     }
     return sum;
 }
-int numerology2(char *s1, char *s2)
-{
-    int sum = 0;
-    while (s1 != s2)
-    {
-        sum += equal(*s1);
-        s1++;
-    }
-    sum += *s1;
-    return sum;
-}
-int numerology3(char *txt, int index1, int index2)
-{
-    int sum = 0;
-    while (index1 != index2)
-    {
-        sum += equal(txt[index1]);
-        index1++;
-    }
-    sum += txt[index1];
-    return sum;
-}
+
 int isAlpha(char c)
 {
     if ((c >= 'a' && c <= 'z') || ('A' <= c && c <= 'Z'))
@@ -247,82 +226,7 @@ void Cfunction(char *word, char *text){
         }
         start++;
     }
-    // printf("\n");
 }
-// void Dfunction(char *word, char *text){
-//     printf("Anagram Sequences: ");
-//     int len = strlen(word);
-//     char copy_word[len];
-//     int start = 0;
-//     int startWord = 0;
-//     int flag = 0;
-//     int i = 0;
-//     for (i = 0; i < strlen(word); i++)
-//         {
-//             copy_word[i] = word[i];
-//         }
-//     while (text[start])
-//     {   
-//         int count = 0;
-//         startWord = start;
-//         if ((text[start]))
-//         {
-//             for (i = 0; i < strlen(word); i++)
-//             {
-//                 if (copy_word[i] != text[startWord])
-//                 {
-//                     break;
-//                 }
-//                 else
-//                 {
-//                     count++;
-//                     startWord++;
-//                 }
-//            }
-//             --startWord;
-//             if (count == strlen(word))
-//             {
-//                 if (flag)
-//                 {
-//                     printf("~");
-//                 }
-//                 flag = 1;
-//                 for (int i = start; i <= startWord; i++)
-//                 {
-//                     printf("%c", text[i]);
-//                 }
-//             }
-//         }
-//         start++;
-//     }
-//     printf("\n");
-// }
-
-
-// char* rev(char *word){
-//     int len = strlen(word);
-//     char s1[len];
-//     for (size_t i = 0; i < len; i++)
-//     {
-//         s1[i] = word[len-1-i];
-//     }
-//     return s1;
-// }
-
-// void Atbash(char *word){
-//     int len = strlen(word);
-//     for (size_t i = 0; i < len; i++)
-//     {
-//         if (isupper(word[i]))
-//         {
-//             word[i] = 'Z' + 'A' -word[i]; 
-//         }
-//         if (islower(word[i]))
-//         {
-//             word[i] = 'z'  + 'a' - word[i];
-//         }
-//     }
-// }
 
 
 int main()
